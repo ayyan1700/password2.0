@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+            var getnum = prompt("enter pswod length under 10");
+            length = getnum;
+            var character = "absdefghjklmnopqrstuvwsxyz1234567890!@#$%^&*()";
+            passWord = "";
+            function generatedPass(){
+                 for (let i = 0; i < length ; i++) {
+                   randomindex = Math.floor(Math.random()*character.length);
+                   passWord += character[randomindex]
+                 }
+                
+                 console.log(passWord);
+            }
+            generatedPass();
+            </script> 
+            
+            </html>
+            
+    </body>
